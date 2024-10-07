@@ -1,0 +1,103 @@
+<!DOCTYPE html> <!--EXAMEN PRACTICO RODRIGUEZ NORIEGA JOSE RAMON 12:00-13:00-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Consulta
+    </title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body id="body">
+     <!-- Cabecera con imagen -->
+     <div id="header">
+        <img id="logo" src="../imagenes/LogoWeb.png" alt="MediAlert">
+    </div>
+
+    <!-- Menú de opciones -->
+    <nav>
+        <a href="PaginaPrincipal.html" class="menu">Inicio</a>
+        <a href="Consultas.html" class="menu">Consultas</a>
+        <a href="Pacientes.html" class="menu">Pacientes</a>
+    </nav>
+
+    <!-- Contenido principal de medio-->
+     <div id="consulta">
+        <h2>Información Personal</h2>
+    <form method="post">
+        <!-- Campo para el nombre -->
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <!-- Campo para la fecha de nacimiento -->
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label><br>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+
+        <!-- Campo para seleccionar el sexo -->
+        <label for="sexo">Sexo:</label><br>
+        <select id="sexo" name="sexo" required>
+            <option value="">Selecciona el sexo</option>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+        </select><br><br>
+        
+        <!-- Campo para Dedicacion -->
+        <label for="nombre">Dedicacion:</label><br>
+        <input type="text" id="dedicacion" name="dedicacion" required><br><br>
+
+        <!-- Campo para peso -->
+        <label for="nombre">Peso:</label><br>
+        <input type="text" id="peso" name="peso" required><br><br>
+        
+        <!-- Campo para talla -->
+        <label for="nombre">Talla:</label><br>
+        <input type="text" id="talla" name="talla" required><br><br>
+        
+        <!-- Campo para la fecha de consulta -->
+        <label for="fecha_consulta">Fecha de Consulta:</label><br>
+        <input type="date" id="fecha_consulta" name="fecha_consulta" required><br><br>
+
+        <h2>Informacion</h2>
+
+        <!-- Campo para antecedentes -->
+        <label for="nombre">Antecedentes:</label><br>
+        <input type="text" id="antecedentes" name="antecedentes" required><br><br>
+
+        <!-- Campo para alergias -->
+        <label for="nombre">Alergias:</label><br>
+        <input type="text" id="alergias" name="alergias" required><br><br>
+        
+        <!-- Campo para medicacion previa -->
+        <label for="nombre">Medicacion previa:</label><br>
+        <input type="text" id="mediprev" name="mediprev" required><br><br>
+        
+        <!-- Campo para signos vitales -->
+        <label for="nombre">Signos vitales:</label><br>
+        <input type="text" id="SignVit" name="SignVit" required><br><br>
+        
+        <!-- Campo para sintomas -->
+        <label for="nombre">Sintomas:</label><br>
+        <input type="text" id="sintomas" name="sintomas" required><br><br>
+        
+        <h2>Receta</h2>
+
+        <!-- Campo para receta -->
+        <label for="nombre">Receta:</label><br>
+        <input type="text" id="receta" name="receta" required><br><br>
+
+
+        <!-- Botón de envío -->
+        <input type="submit" value="Generar">
+    </form>
+    </div>
+
+    <!-- Pie de página -->
+    <div id="footer">
+        <p>
+            MediAlert © 2024 Derechos Reservados
+        </p>
+    </div>
+</body>
+
+</html>
