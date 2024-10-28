@@ -17,7 +17,9 @@
     <!-- Menú de opciones -->
     <nav>
         <a href="PaginaPrincipal.html" class="menu">Inicio</a>
+        <a>|</a>
         <a href="Consultas.html" class="menu">Consultas</a>
+        <a>|</a>
         <a href="Pacientes.html" class="menu">Pacientes</a>
     </nav>
 
@@ -26,12 +28,19 @@
         <h2>Información Personal</h2>
     <form method="post">
         <!-- Campo para el nombre -->
-        <label for="nombre">Nombre:</label><br>
+        <label for="nombre">Apellido Paterno:</label><br>
+        <input type="text" id="apePat" name="apellido_paterno" required><br><br>
+
+        <label for="nombre">Apellido Materno:</label><br>
+        <input type="text" id="apeMat" name="apellido_materno" required><br><br>
+
+        <!-- Campo para el nombre -->
+        <label for="nombre">Nombre(s):</label><br>
         <input type="text" id="nombre" name="nombre" required><br><br>
 
         <!-- Campo para la fecha de nacimiento -->
         <label for="fecha_nacimiento">Fecha de Nacimiento:</label><br>
-        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" value="1900-01-01" required><br><br>
 
         <!-- Campo para seleccionar el sexo -->
         <label for="sexo">Sexo:</label><br>
@@ -58,7 +67,7 @@
         <label for="fecha_consulta">Fecha de Consulta:</label><br>
         <input type="date" id="fecha_consulta" name="fecha_consulta" required><br><br>
 
-        <h2>Informacion</h2>
+        <h2>Información</h2>
 
         <!-- Campo para antecedentes -->
         <label for="nombre">Antecedentes:</label><br>
