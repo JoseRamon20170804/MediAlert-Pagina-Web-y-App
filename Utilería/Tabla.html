@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Consultas</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        button {
+            padding: 5px 10px;
+            margin: 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Tabla de Consultas</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Última Consulta</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Juan Pérez</td>
+            <td>2024-10-28</td>
+            <td>
+                <button onclick="verificar('Juan Pérez')">Verificar</button>
+                <button onclick="darDeAlta('Juan Pérez')">Dar de alta</button>
+                <button onclick="eliminar('Juan Pérez')">Eliminar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>María Gómez</td>
+            <td>2024-10-27</td>
+            <td>
+                <button onclick="verificar('María Gómez')">Verificar</button>
+                <button onclick="darDeAlta('María Gómez')">Dar de alta</button>
+                <button onclick="eliminar('María Gómez')">Eliminar</button>
+            </td>
+        </tr>
+        <!-- Agrega más filas según sea necesario -->
+    </tbody>
+</table>
+
+<script>
+    function verificar(nombre) {
+        alert('Verificando a ' + nombre);
+    }
+
+    function darDeAlta(nombre) {
+        alert('Dando de alta a ' + nombre);
+    }
+
+    function eliminar(nombre) {
+        alert('Eliminando a ' + nombre);
+    }
+</script>
+
+</body>
+</html>

@@ -1,7 +1,7 @@
 /* Estilos CSS para el imagen de cabecera */
 #header {
     background-image: url('../imagenes/resplandor.png');
-    background-color: #fdfdfd;
+    background-color: #D6EBEE;
     background-size: auto;
     margin: 5px 0px;
     height: 130px;
@@ -14,7 +14,7 @@
     width: -webkit-fill-available;
 }
 body {
-    background-color: #ffffff;
+    background-color: #D6EBEE;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -28,7 +28,7 @@ body {
 }
 /* Estilos CSS para el pie de página */
 #footer {
-    background-color: #ABD7DB;
+    background-color: #08A48C;
     text-align: center;
     width: 100%;
 	color: #ffffff;
@@ -46,7 +46,7 @@ body {
 /* Estilos CSS para el menú */
 nav {
     text-align: center;
-    background-color: #ABD7DB;
+    background-color: #08A48C;
     color: white;
     padding: 10px 0;
     border-radius: 5px;
@@ -60,7 +60,7 @@ nav a {
 #consulta {
     border-radius: 8px;
     background-color: #ffffffbd;
-    margin: 5px 5px;
+    margin: 5px 0;
     font-family: Arial;
 }
 #consulta #modulo {
@@ -108,6 +108,28 @@ nav a {
 .titulo{
     font-size: x-large;
     font-family: Arial;
+}
+#nombre{
+    width: 200px; /* Ajusta el ancho */
+}
+#peso{
+    width: 50px;
+}
+#talla{
+    width: 50px;
+}
+#sintomas{
+    width: 500px;
+    height: 200px;
+}
+#receta{
+    width: 500px;
+    height: 200px;
+}
+#form{
+    margin: 0 15px
+     5px;
+    margin-right: auto;
 }
 /*
 Verde Claro: #ABD7DA

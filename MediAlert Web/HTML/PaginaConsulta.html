@@ -25,25 +25,31 @@
 
     <!-- Contenido principal de medio-->
      <div id="consulta">
+        
+    <form method="post" id="form">
         <h2>Información Personal</h2>
-    <form method="post">
+        <!-- Botones de pacientes-->
+        <button type="button" class="boton">Paciente Existente</button>
+        <button type="button" class="boton">Guardar Paciente</button>
+        
+        <br><br>
         <!-- Campo para el nombre -->
-        <label for="nombre">Apellido Paterno:</label><br>
+        <label for="nombre">Apellido Paterno:</label>
         <input type="text" id="apePat" name="apellido_paterno" required><br><br>
 
-        <label for="nombre">Apellido Materno:</label><br>
+        <label for="nombre">Apellido Materno:</label>
         <input type="text" id="apeMat" name="apellido_materno" required><br><br>
 
         <!-- Campo para el nombre -->
-        <label for="nombre">Nombre(s):</label><br>
+        <label for="nombre">Nombre(s):</label>
         <input type="text" id="nombre" name="nombre" required><br><br>
 
         <!-- Campo para la fecha de nacimiento -->
-        <label for="fecha_nacimiento">Fecha de Nacimiento:</label><br>
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
         <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" value="1900-01-01" required><br><br>
 
         <!-- Campo para seleccionar el sexo -->
-        <label for="sexo">Sexo:</label><br>
+        <label for="sexo">Sexo:</label>
         <select id="sexo" name="sexo" required>
             <option value="">Selecciona el sexo</option>
             <option value="masculino">Masculino</option>
@@ -51,46 +57,58 @@
             <option value="otro">Otro</option>
         </select><br><br>
         
-        <!-- Campo para Dedicacion -->
-        <label for="nombre">Dedicacion:</label><br>
-        <input type="text" id="dedicacion" name="dedicacion" required><br><br>
+        <h2>Información de consulta</h2>
 
-        <!-- Campo para peso -->
-        <label for="nombre">Peso:</label><br>
-        <input type="text" id="peso" name="peso" required><br><br>
-        
-        <!-- Campo para talla -->
-        <label for="nombre">Talla:</label><br>
-        <input type="text" id="talla" name="talla" required><br><br>
-        
         <!-- Campo para la fecha de consulta -->
-        <label for="fecha_consulta">Fecha de Consulta:</label><br>
+        <label for="fecha_consulta">Fecha de Consulta:</label>
         <input type="date" id="fecha_consulta" name="fecha_consulta" required><br><br>
 
-        <h2>Información</h2>
+        <!-- Campo para Tension arterial -->
+        <label for="nombre">Tension Arterial(T.A.):</label>
+        <input type="text" id="ta" name="ta" required><br><br>
 
-        <!-- Campo para antecedentes -->
-        <label for="nombre">Antecedentes:</label><br>
-        <input type="text" id="antecedentes" name="antecedentes" required><br><br>
+        <!-- Campo para Frecuencia Cardiaca -->
+        <label for="nombre">Frecuencia Cardiaca(F.C.):</label>
+        <input type="text" id="fc" name="fc" required><br><br>  
 
+        <!-- Campo para Factor reumatoideo -->
+        <label for="nombre">Factor reumatoideo(F.R.):</label>
+        <input type="text" id="fr" name="fr" required><br><br>
+
+        <!-- Campo para temperatura -->
+        <label for="nombre">Temp:</label>
+        <input type="text" id="peso" name="temp" required>
+        <label> °. </label><br><br>
+
+        <!-- Campo para peso -->
+        <label for="nombre">Peso:</label>
+        <input type="text" id="peso" name="peso" required>
+        <label> kgs. </label><br><br>
+        
+        <!-- Campo para talla -->
+        <label for="nombre">Altura:</label>
+        <input type="text" id="talla" name="talla" required>
+        <label> cms. </label><br><br>
+                
         <!-- Campo para alergias -->
-        <label for="nombre">Alergias:</label><br>
+        <label for="nombre">Alergias:</label>
         <input type="text" id="alergias" name="alergias" required><br><br>
         
         <!-- Campo para medicacion previa -->
-        <label for="nombre">Medicacion previa:</label><br>
+        <label for="nombre">Medicacion previa:</label>
         <input type="text" id="mediprev" name="mediprev" required><br><br>
         
-        <!-- Campo para signos vitales -->
-        <label for="nombre">Signos vitales:</label><br>
+        <!-- Campo para signos vitales 
+        <label for="nombre">Signos vitales:</label>
         <input type="text" id="SignVit" name="SignVit" required><br><br>
+         -->
+
         
+        <h2>Receta</h2>
         <!-- Campo para sintomas -->
         <label for="nombre">Sintomas:</label><br>
         <input type="text" id="sintomas" name="sintomas" required><br><br>
         
-        <h2>Receta</h2>
-
         <!-- Campo para receta -->
         <label for="nombre">Receta:</label><br>
         <input type="text" id="receta" name="receta" required><br><br>
