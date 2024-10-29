@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediApp - Tu Asistente Médico Personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #0066cc;
+            color: white;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0059b3 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        #showcase {
+            min-height: 400px;
+            background: url('/placeholder.svg?height=400&width=1200') no-repeat center center/cover;
+            text-align: center;
+            color: #ffffff;
+        }
+        #showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        #showcase p {
+            font-size: 20px;
+        }
+        #features {
+            margin-top: 20px;
+        }
+        .feature-box {
+            float: left;
+            width: 30%;
+            padding: 10px;
+            text-align: center;
+        }
+        .feature-box img {
+            width: 90px;
+        }
+        #interactive {
+            clear: both;
+            padding: 20px;
+            margin-top: 20px;
+            background: #f4f4f4;
+            text-align: center;
+        }
+        .body-part {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            background: #e6e6e6;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .body-part:hover {
+            background: #d4d4d4;
+        }
+        #download {
+            text-align: center;
+            padding: 20px;
+            background: #0066cc;
+        }
+        .button {
+            display: inline-block;
+            background: #e8491d;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .button:hover {
+            background: #ff5722;
+        }
+        footer {
+            background: #0066cc;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Medi</span>App</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="#showcase">Inicio</a></li>
+                    <li><a href="#features">Características</a></li>
+                    <li><a href="#interactive">Interactivo</a></li>
+                    <li><a href="#download">Descargar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Tu Asistente Médico Personal</h1>
+            <p>MediApp te ayuda a gestionar tu salud de manera fácil y eficiente</p>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <div class="feature-box">
+                <img src="/placeholder.svg?height=90&width=90" alt="Diagnóstico">
+                <h3>Diagnóstico Rápido</h3>
+                <p>Obtén una evaluación inicial de tus síntomas en minutos</p>
+            </div>
+            <div class="feature-box">
+                <img src="/placeholder.svg?height=90&width=90" alt="Recordatorios">
+                <h3>Recordatorios de Medicación</h3>
+                <p>Nunca olvides tomar tus medicamentos a tiempo</p>
+            </div>
+            <div class="feature-box">
+                <img src="/placeholder.svg?height=90&width=90" alt="Consultas">
+                <h3>Consultas en Línea</h3>
+                <p>Conecta con médicos certificados desde la comodidad de tu hogar</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="interactive">
+        <div class="container">
+            <h2>Explora Tu Cuerpo</h2>
+            <p>Haz clic en una parte del cuerpo para obtener información:</p>
+            <div id="body-parts">
+                <div class="body-part" data-info="El cerebro controla todas las funciones del cuerpo">Cabeza</div>
+                <div class="body-part" data-info="El corazón bombea sangre a todo el cuerpo">Corazón</div>
+                <div class="body-part" data-info="Los pulmones oxigenan la sangre">Pulmones</div>
+                <div class="body-part" data-info="El estómago digiere los alimentos">Estómago</div>
+            </div>
+            <div id="info-display"></div>
+        </div>
+    </section>
+
+    <section id="download">
+        <div class="container">
+            <h2>Descarga MediApp Ahora</h2>
+            <a href="#" class="button">Descargar App</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>MediApp &copy; 2024</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const bodyParts = document.querySelectorAll('.body-part');
+            const infoDisplay = document.getElementById('info-display');
+
+            bodyParts.forEach(part => {
+                part.addEventListener('click', () => {
+                    const info = part.getAttribute('data-info');
+                    infoDisplay.textContent = info;
+                    infoDisplay.style.padding = '10px';
+                    infoDisplay.style.marginTop = '20px';
+                    infoDisplay.style.backgroundColor = '#e6e6e6';
+                    infoDisplay.style.borderRadius = '5px';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
