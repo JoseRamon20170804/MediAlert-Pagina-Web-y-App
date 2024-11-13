@@ -1,0 +1,23 @@
+my-app/
+├── public/
+├── src/
+│   ├── api/              # Modelo - Lógica de negocio y conexión a API
+│   │   ├── pacientesAPI.js
+│   │   └── consultasAPI.js
+│   ├── controllers/       # Controlador - Lógica de interacción entre la vista y el modelo
+│   │   ├── pacientesController.js
+│   │   └── consultasController.js
+│   ├── views/             # Vista - Componentes de React que representan la interfaz de usuario
+│   │   ├── Pacientes/
+│   │   │   ├── PacientesTable.js
+│   │   │   └── PacienteForm.js
+│   │   ├── Consultas/
+│   │   │   ├── ConsultasTable.js
+│   │   │   └── ConsultaForm.js
+│   │   └── Layout.js      # Layout general
+│   ├── App.js
+│   ├── index.js
+│   └── App.css
+├── .gitignore
+├── package.json
+└── README.md
